@@ -245,3 +245,43 @@ body {
 .scroll-down:hover {
 	bottom: 4%;
 }
+
+.services {
+	background: #70bfff;
+}
+
+.services-list__item {
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+	margin-bottom: 20px;
+	transition: all .3s;
+	cursor: crosshair;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.services-list__item:hover {
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
+	transform: scale(1.05);
+}
+
+.services-list__icon {
+	height: 40px;
+	width: 40px;
+	transition: all .3s;
+}
+
+.services-list__item:hover .services-list__icon {
+	fill: var(--blue);
+}
+
+.services-list__icon--text {
+	font-size: 40px;
+}
+
+.services-list__item:hover .services-list__icon--text {
+	color: var(--blue);
+}
+
