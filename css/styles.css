@@ -621,3 +621,43 @@ body {
 	font-weight: 900;
 	text-transform: uppercase;
 }
+
+.fixed-nav {
+	position: fixed;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%);
+	z-index: 9;
+}
+
+.fixed-nav a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .3);
+	position: relative;
+	text-decoration: none;
+	margin-bottom: 10px;
+	transition: all .3s;
+	color: var(--grey);
+}
+
+.fixed-nav a:hover,
+.fixed-nav a.active {
+	color: var(--red);
+	background: var(--red);
+}
+
+.fixed-nav a span {
+	transition: all .5s;
+	position: absolute;
+	right: -20px;
+	opacity: 0;
+}
+
+.fixed-nav a:hover span,
+.fixed-nav a.active span {
+	right: 30px;
+	opacity: 1;
+}
