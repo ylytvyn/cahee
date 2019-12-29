@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/fonts/icomoon/style.css">
+	<link rel="stylesheet" href="js/libs/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 	<!--[if lte IE 9]>
@@ -159,29 +160,30 @@
 				<h1 class="gallery__title">Gallery</h1>
 				<p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis culpa vel laborum, soluta ipsa inventore nihil dolores facere deleniti ipsam commodi exercitationem unde quasi.</p>
 			</div>
+
 			<div class="row photos">
 				<div class="col-8">
-					<div class="photo photo--big">
+					<a data-fancybox="img-photo" class="photo photo--big" href="images/gallery/1.jpg" data-caption="My very beautiful image">
 						<img src="images/gallery/1.jpg" alt="Gallery Item">
-					</div>
+					</a>
 				</div>
 				<div class="col-4">
-					<div class="photo">
+					<a data-fancybox="img-photo" class="photo" href="images/gallery/2-big.jpg">
 						<img src="images/gallery/2.jpg" alt="Gallery Item">
-					</div>
-					<div class="photo">
+					</a>
+					<a data-fancybox="img-photo" class="photo" href="images/gallery/3-big.jpg">
 						<img src="images/gallery/3.jpg" alt="Gallery Item">
-					</div>
+					</a>
 				</div>
 				<div class="col-6">
-					<div class="photo">
+					<a data-fancybox="img-photo" class="photo" href="images/gallery/4-big.jpg">
 						<img src="images/gallery/4.jpg" alt="Gallery Item">
-					</div>
+					</a>
 				</div>
 				<div class="col-6">
-					<div class="photo">
+					<a data-fancybox="img-photo" class="photo" href="images/gallery/5-big.jpg">
 						<img src="images/gallery/5.jpg" alt="Gallery Item">
-					</div>
+					</a>
 				</div>
 			</div>
 			<div class="gallery__button">
@@ -314,6 +316,7 @@
 
 	<!-- Scripts -->
 	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/fancybox/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

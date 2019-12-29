@@ -33,5 +33,20 @@
 			$('.fixed-nav').find('.active').removeClass('active');
 			$('.fixed-nav').find(`a[data-menu=${pos}]`).addClass('active');
 		});
+
+		// Fancybox
+		$('.photo').fancybox({
+			buttons: [
+				"fullScreen",
+				"download",
+				"thumbs",
+				"close"
+			],
+			animationEffect: "zoom-in-out",
+			animationDuration: 800,
+			transitionEffect: "tube",
+			transitionDuration: 500,
+			loop: true
+		});
 	});
 })(jQuery);
